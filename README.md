@@ -5,4 +5,4 @@
 1. 蒐集dataset (全員)
 2. code更改 (管+彭)
 3. SRS(latex) (吳+vipDog)
-4. PPT(latex) (王+
+4. PPT(latex) (王+vipDog)
