@@ -6,3 +6,5 @@
 2. code更改 (管+彭)
 3. SRS(latex) (吳+vipDog)
 4. PPT(latex) (王+vipDog)
+
+6/13統整所有內容
