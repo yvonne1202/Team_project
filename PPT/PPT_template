@@ -239,7 +239,31 @@ Testing samples & 200 \\
 
 \subsection{Quantitative evaluation}
 \begin{frame}{Quantitative evaluation}
-  直接按照通訊企畫書的?
+  在量化成果部分，我們導入MSE(Mean Squared Error)公式，以評估整體系統分析的準確性。\\
+MSE的數值，為路面品質密度圖，與手動標記正確密度圖的差異值。
+{\color{red}數值越小，代表差異越小，得到的成果越準確，反之亦然。}\\
+本團隊在路面品質大數據庫中，針對每種道路破損狀況，各挑出40張未訓練過之道路視訊串流影像，分別輸入至本系統之路面品質檢測模型，與VGG16模型中，進行測試與比較，實際量化成果如表1所示。
+
+\begin{table}
+\renewcommand\arraystretch{1.2}
+\scalebox{1.1}{ 
+\begin{tabular}{| c | c | c | c | c | c |} 
+\hline  
+\textbf{ } & 
+\textbf{正常道路} &
+\textbf{水溝蓋} &
+\textbf{補丁} &
+\textbf{坑洞} &
+\textbf{裂縫}\\  
+\hline  
+VGG16 & 0.000 & 0.085 & 0.115 & 0.015 & 0.084\\
+\hline  
+Ours & 0.000 & 0.058 & 0.066 & 0.010 & 0.060\\  
+\hline 
+\end{tabular}} 
+\caption{本系統與VGG16之量化成果比較表(四捨五入至小數點後三位)} 
+\end{table}
+
 \end{frame}
 
 \begin{frame}{END}
