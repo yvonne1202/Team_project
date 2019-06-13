@@ -1,0 +1,226 @@
+% 開放平台期末ppt
+
+\documentclass{beamer}
+
+\usepackage{graphicx}
+
+\usepackage{CJKutf8}
+
+\usetheme{Madrid}
+\setbeamertemplate{footline}
+{
+\leavevmode
+\hbox{
+\begin{beamercolorbox}
+[wd=1\paperwidth,ht=2.25ex,
+dp=1ex,right]{date in head/foot}
+\insertframenumber{} /
+\inserttotalframenumber\hspace*{2ex}
+\end{beamercolorbox}
+}\vskip0pt
+}
+
+\title{開放平台期末專題}
+
+\subtitle{道路品質檢測系統}
+
+\author{1051511 管若嵐 \and 1051530 王繶蓁 \and \\1051531 鄭靖潔 \and 1051539 彭梓瑄 \and \\1053332 吳芷芳}
+
+\date{June 14, 2019}
+
+
+
+
+% 開始打內容
+\begin{document}
+\begin{CJK}{UTF8}{bkai}
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Outline}
+	\tableofcontents[sections=1-2]
+	\framebreak 
+	\tableofcontents[sections=3-4]
+\end{frame}
+
+%標題一
+\section{Introduction}
+
+\subsection{Introduction to your team}
+\begin{frame}{Introduction to your team}
+
+我們的組員有管若嵐、王繶蓁、鄭靖潔、彭梓瑄、吳芷芳\\
+
+\end{frame}
+
+\subsection{The problem we're trying to solve}
+\begin{frame}{The problem we're trying to solve}
+
+	隨著車聯網（Internet of Vehicle，IoV）技術的發展，國內外各大車廠皆積極發展自動駕駛車（Self-Driving Car）。其中，在自動駕駛車的安全防護設計中，各大車廠積極鑽研於軟硬體的co-design，以避免交通事故發生。
+
+	但是在自動駕駛車的應用情景中，常因為路面不平整、路面破損，導致車輛感測器的感測能力下降，進而影響自動駕駛車的行車安全。
+
+	因此我們提出道路品質檢測系統，準確偵測路面破損，並同時評估各路段的整體道路品質。本系統可導入自動駕駛車的設計，提高行車安全，亦可將破損路面資訊，提供給相關維運單位，以提供更好的用路品質。
+
+\end{frame}
+
+
+%標題二
+\section{Methodology}
+
+\subsection{Architecture of our model}
+\begin{frame}{Architecture of our model}
+  這頁比利沒有說要，我只是想說放個完整的架構圖
+  
+
+  以VGG16模型作為骨幹網路，延伸建立一個路面品質檢測模型
+
+
+  (塞架構圖)
+\end{frame}
+
+\subsection{Input of our model}
+\begin{frame}{Input of our model}
+  道路視訊串流影像
+
+
+  (這邊到時候加一張圖?)
+\end{frame}
+
+\subsection{Output of our model}
+\begin{frame}{Output of our model}
+   路面品質密度圖
+
+
+  (這邊到時候加一張圖?)
+\end{frame}
+
+\subsection{Each layer of our model}
+\begin{frame}{Each layer of our model}
+ 此模型共分為6個區塊(Blocks)，分別為區塊1至區塊6:
+  \begin{itemize}
+  \item {
+    區塊1與區塊2各使用兩個卷積層(Convolution Layer)與一個池化層(Pooling Layer
+  }
+  \item {   
+    區塊3、區塊4與區塊5各使用三個卷積層與一個池化層
+  }
+  \item {
+ 區塊6使用三個反卷積層(Deconvolution Layer)
+  }
+  \end{itemize}
+  (看要不要再放圖)
+\end{frame}
+
+\subsection{Save model}
+\begin{frame}{Save model}
+	不知道
+\end{frame}
+
+\subsection{File size of our model}
+\begin{frame}{File size of our model}
+  不知道
+\end{frame}
+
+\subsection{Our loss functions}
+\begin{frame}{Our loss functions}
+  不知道
+\end{frame}
+
+\subsection{Our optimizer and the setting of hyperparameter?}
+\begin{frame}{Our optimizer and the setting of hyperparameter?}
+  不知道
+\end{frame}
+
+
+%標題三
+\section{Dataset}
+
+\subsection{The size of our dataset}
+\begin{frame}{The size of our dataset}
+  \begin{itemize}
+  \item {
+     2.5K張路面影像
+  }
+  \item {   
+    2.5K張路面品質密度圖
+  }
+  \end{itemize}
+\end{frame}
+
+\subsection{Collect/build our dataset}
+\begin{frame}{Collect/build our dataset}
+	利用MATLAB，設計標記工具，依照路面影像中的路面狀況，以手動方式標記出路面破損處，製作各路面影像對應的路面品質密度圖
+\end{frame}
+
+\subsection{Training samples in our dataset?}
+\begin{frame}{Training samples in our dataset?}
+	要問你們
+\end{frame}
+
+\subsection{Validating samples in our dataset?}
+\begin{frame}{Validating samples in our dataset?}
+	要問你們
+\end{frame}
+
+\subsection{Testing samples in our dataset?}
+\begin{frame}{Testing samples in our dataset?}
+  要問你們
+\end{frame}
+
+
+%標題四
+\section{ Experimental Evaluation}
+
+\subsection{Experimental environment}
+\begin{frame}{Experimental environment}
+	\begin{block}{路面品質大數據庫}
+	\begin{itemize}
+		\item {Matlab R2017a}
+	\end{itemize}
+	\end{block}
+	\begin{block}{路面品質檢測模型}
+	\begin{itemize}
+		\item {Windows 10}
+		\item {Python 3.6}
+		\item {OpenCV 3.4}
+		\item {kERAS 2.2.2}
+	\end{itemize}
+	\end{block}
+	\begin{block}{路面品質雲端平台}
+	\begin{itemize}
+		\item {Python 3.6}
+		\item {PyQt 5}
+		\item {OpenWeatherMap}
+		\item {Dashboard}   %這個不知道要不要
+	\end{itemize}
+	\end{block}
+\end{frame}
+
+\subsection{Epochs our set for training?}
+\begin{frame}{Epochs our set for training?}
+  要問你們
+\end{frame}
+
+\subsection{Qualitative evaluation}
+\begin{frame}{Qualitative evaluation}
+  直接按照通訊企畫書的?
+\end{frame}
+
+\subsection{Quantitative evaluation}
+\begin{frame}{Quantitative evaluation}
+  直接按照通訊企畫書的?
+\end{frame}
+
+\begin{frame}{END}
+謝謝你的聆聽!
+\begin{figure}
+\includegraphics
+[width=0.5\linewidth]{1.jpg}
+\end{figure}
+\end{frame}
+
+\end{CJK}
+\end{document}
