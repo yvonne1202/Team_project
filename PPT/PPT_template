@@ -229,8 +229,13 @@ Testing samples & 200 \\
 
 \subsection{Qualitative evaluation}
 \begin{frame}{Qualitative evaluation}
-  直接按照通訊企畫書的?
-\end{frame}
+  在質化成果部分，我們以路面品質密度圖，來呈現本系統的路面品質檢測成果，並將其呈現於Dashboard介面上，本系統對於水溝蓋、補丁、坑洞與裂縫，都能準確分析並進行標示，如下圖(a)\~{}(d)所示:
+
+\begin{figure}
+\includegraphics
+[width=0.85\linewidth]{qualitative.jpg}
+\caption{質化成果示意圖。(a)水溝蓋之質化成果；(b)補丁之質化成果；(c)坑洞之質化成果；(d)裂縫之質化成果。}
+\end{figure}
 
 \subsection{Quantitative evaluation}
 \begin{frame}{Quantitative evaluation}
