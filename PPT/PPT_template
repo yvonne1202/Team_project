@@ -209,7 +209,8 @@ Testing samples & 200 \\
 		\item {Windows 10}
 		\item {Python 3.6}
 		\item {OpenCV 3.4}
-		\item {kERAS 2.2.2}
+		\item {Keras 2.2.2}
+		\item {GPU顯卡}
 	\end{itemize}
 	\end{block}
 	\begin{block}{路面品質雲端平台}
@@ -217,14 +218,13 @@ Testing samples & 200 \\
 		\item {Python 3.6}
 		\item {PyQt 5}
 		\item {OpenWeatherMap}
-		\item {Dashboard}   %這個不知道要不要
 	\end{itemize}
 	\end{block}
 \end{frame}
 
-\subsection{Epochs our set for training?}
-\begin{frame}{Epochs our set for training?}
-  要問你們
+\subsection{Epochs our set for training}
+\begin{frame}{Epochs our set for training}
+  845 Epochs
 \end{frame}
 
 \subsection{Qualitative evaluation}
