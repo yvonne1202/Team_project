@@ -178,6 +178,8 @@ dp=1ex,right]{date in head/foot}
 \begin{frame}{Samples in our dataset}
 
 \begin{table}
+\renewcommand\arraystretch{1.5} %表格內1.5倍行高
+\scalebox{1.5}{   %表格縮放1.5倍
 \begin{tabular}{ c | c }  
 \textbf{Samples} & 
 \textbf{Quantities}\\  
