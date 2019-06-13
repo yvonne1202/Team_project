@@ -29,4 +29,5 @@ Monitoring)、車道偏離警示(Lane Departure Warning System)、碰撞預防�
 
 2.1 Product Perspective
   整體而言，本系統的主要目標是，提出一套道路品質檢測系統，利用群眾外包架構，讓每台車輛利用行動網路與行車紀錄器，提供所行經的道路視訊串流與GPS座標位
-置，並使用卷積神經網路(Convolutional Neural Network，CNN)進行分析，即時產生路面品質
+置，並使用卷積神經網路(Convolutional Neural Network，CNN)進行分析，即時產生路面品質密度圖，將分析後的結果回傳至雲端平台，計算出各路段整體的道路品質。
+本系統按Figure2.1所示，分成三個部份實行，分別為路面品質大數據庫、路面品質檢測模型及路面品質雲端平台，逐步完成。
