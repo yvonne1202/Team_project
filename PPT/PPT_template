@@ -72,13 +72,11 @@ dp=1ex,right]{date in head/foot}
 
 \subsection{Architecture of our model}
 \begin{frame}{Architecture of our model}
-  這頁比利沒有說要，我只是想說放個完整的架構圖
-  
-
-  以VGG16模型作為骨幹網路，延伸建立一個路面品質檢測模型
-
-
-  (塞架構圖)
+ \begin{figure}
+\includegraphics
+[width=1\linewidth]{architecture.jpg}
+\caption{以VGG16模型作為骨幹網路，延伸建立一個路面品質檢測模型} 
+\end{figure}
 \end{frame}
 
 \subsection{Input of our model}
