@@ -79,6 +79,17 @@ dp=1ex,right]{date in head/foot}
 \end{figure}
 \end{frame}
 
+\subsection{Our model}
+\begin{frame}{Our model}
+
+\begin{figure}
+\includegraphics
+[width=1\linewidth]{model.jpg}
+\caption{以VGG16模型作為骨幹網路} 
+\end{figure}
+
+\end{frame}
+
 \subsection{Input of our model}
 \begin{frame}{Input of our model}
   道路視訊串流影像
