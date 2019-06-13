@@ -159,33 +159,38 @@ dp=1ex,right]{date in head/foot}
 \subsection{The size of our dataset}
 \begin{frame}{The size of our dataset}
   \begin{itemize}
-  \item {
-     2.5K張路面影像
-  }
-  \item {   
-    2.5K張路面品質密度圖
-  }
+  \item {{\LARGE 1532張道路視訊串流影像}}
+  \item {{\LARGE 1532張路面品質密度圖}}
   \end{itemize}
 \end{frame}
 
 \subsection{Collect/build our dataset}
 \begin{frame}{Collect/build our dataset}
 	利用MATLAB，設計標記工具，依照路面影像中的路面狀況，以手動方式標記出路面破損處，製作各路面影像對應的路面品質密度圖
+\begin{figure}
+\includegraphics
+[width=1\linewidth]{matlab.png}
+\end{figure}
 \end{frame}
 
-\subsection{Training samples in our dataset?}
-\begin{frame}{Training samples in our dataset?}
-	要問你們
-\end{frame}
 
-\subsection{Validating samples in our dataset?}
-\begin{frame}{Validating samples in our dataset?}
-	要問你們
-\end{frame}
+\subsection{Samples in our dataset}
+\begin{frame}{Samples in our dataset}
 
-\subsection{Testing samples in our dataset?}
-\begin{frame}{Testing samples in our dataset?}
-  要問你們
+\begin{table}
+\begin{tabular}{ c | c }  
+\textbf{Samples} & 
+\textbf{Quantities}\\  
+\hline 
+Training samples & 1066 \\
+\hline 
+Validating samples & 266 \\
+\hline 
+Testing samples & 200 \\ 
+\end{tabular}} 
+\caption{Samples} 
+\end{table}
+
 \end{frame}
 
 
