@@ -50,8 +50,13 @@ dp=1ex,right]{date in head/foot}
 
 \subsection{Introduction to your team}
 \begin{frame}{Introduction to your team}
-
-我們的組員有管若嵐、王繶蓁、鄭靖潔、彭梓瑄、吳芷芳\\
+\begin{center}
+	我們的組員有\underline{管若嵐}、\underline{王繶蓁}、\underline{鄭靖潔}、\underline{彭梓瑄}、\underline{吳芷芳}\\
+\end{center}
+\begin{figure}
+\includegraphics
+[width=0.6\linewidth]{we.jpg}
+\end{figure}
 
 \end{frame}
 
