@@ -92,18 +92,24 @@ dp=1ex,right]{date in head/foot}
 
 \subsection{Input of our model}
 \begin{frame}{Input of our model}
-  道路視訊串流影像
 
+\begin{figure}
+\includegraphics
+[width=0.7\linewidth]{input.jpg}
+\caption{道路視訊串流影像} 
+\end{figure}
 
-  (這邊到時候加一張圖?)
 \end{frame}
 
 \subsection{Output of our model}
 \begin{frame}{Output of our model}
-   路面品質密度圖
 
+\begin{figure}
+\includegraphics
+[width=0.8\linewidth]{output.jpg}
+\caption{路面品質密度圖} 
+\end{figure}
 
-  (這邊到時候加一張圖?)
 \end{frame}
 
 \subsection{Each layer of our model}
